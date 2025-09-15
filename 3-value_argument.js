@@ -1,11 +1,7 @@
-function checkArguments(...args) {
-    if (args.length === 0) {
-        console.log("No Argument");
-    } else if (args.length === 1){
-        console.log(args[0])
-    } else {
-        console.log(args[0])
-    }
-}
+const arg = process.argv[2];
 
-checkArguments(...process.argv.slice(2));
+if (arg) {
+  console.log(arg);
+} else {
+  console.log('No argument');
+}
